@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center; 
+    margin: 0; 
+}
+
+.piano-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    padding: 50px 0; 
+    border-radius: 15px;
+}
+
+.piano {
+    background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
+    background: -moz-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
+    background: -o-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
+    background: linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
+    border-top: 2px solid #111;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.5), inset 0 -4px 5px #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.key {
+    display: inline-block;
+    position: relative;
+    margin: 0 2px;
+    width: 60px;
+    height: 300px;
+}
+
+.white-key {
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block;
+}
+
+.black-key {
+    background: #000;
+    position: absolute;
+    width: 40px;
+    height: 180px;
+    top: 0;
+    right: -20px;
+    z-index: 2;
+    border-radius: 0 0 3px 3px;
+}
+
+.black-key:active, .white-key:active {
+    transform: translateY(2px);
+}
+
+.search-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.erase-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.erase-btn:hover {
+    background-color: #337ab7;
+}
+
+.results-section {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-item {
+    margin: 10px 0;
+}
+
+.play-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.play-btn:hover {
+    background-color: #337ab7;
+}
